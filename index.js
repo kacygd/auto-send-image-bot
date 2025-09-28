@@ -281,7 +281,7 @@ async function sendNSFWAnime(channel) {
 
     while (attempts < maxAttempts) {
         attempts++;
-        const endpoint = config.useTrap ? 'https://api.waifu.pics/nsfw/trap' : 'https://api.waifu.pics/nsfw';
+        const endpoint = config.useTrap ? 'https://api.waifu.pics/nsfw/trap' : 'https://api.waifu.pics/nsfw/waifu';
 
         try {
             const response = await fetch(endpoint);
